@@ -6,7 +6,7 @@ import matplotlib.animation as animation
 
 PI = math.pi
 POINTS_PER_FRAME = 50
-TOTAL_TARGET_POINTS = 100000
+TOTAL_TARGET_POINTS = 1000
 if TOTAL_TARGET_POINTS % POINTS_PER_FRAME == 0:
     FRAMES = int(TOTAL_TARGET_POINTS / POINTS_PER_FRAME)
 else:
@@ -168,3 +168,4 @@ ani = animation.FuncAnimation(fig, update, frames=FRAMES, init_func=init, interv
 
 plt.tight_layout()
 plt.show()
+
